@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            table, th, td {
+                border: 1px solid rgb(8, 8, 8);
+                border-collapse: collapse;
+                
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+        </style>
+        <script>
+            function add() {
+                var a=document.getElementById('1st no').value;
+                var b=document.getElementById('2nd no').value;
+                var c=parseInt(a)+parseInt(b);
+                console.log(c);
+                window.alert(c);
+
+            }
+
+            function sub() {
+                var d=document.getElementById('1st no').value;
+                var e=document.getElementById('2nd no').value;
+                var f=parseInt(d)-parseInt(e);
+                console.log(f);
+                window.alert(f);
+
+            }
+            
+            function mul() {
+                var a1=document.getElementById('1st no').value;
+                var b1=document.getElementById('2nd no').value;
+                var c=parseInt(a1)*parseInt(b1);
+                console.log(c1);
+                window.alert(c1);
+
+            }
+            
+            function div() {
+                var d1=document.getElementById('1st no').value;
+                var e1=document.getElementById('2nd no').value;
+                var f1=parseInt(d1)/parseInt(e1);
+                console.log(f1);
+                window.alert(f1);
+
+            }
+            
+        </script>
+</head>
+<style>
+    body {
+        background-color: rgb(34, 194, 167);
+        color: rgb(12, 2, 5);
+    }
+</style>
+         
+        <body> 
+            
+
+            <div style="text-align: center;">
+                <h1>Hello everyone.This is calculator</h1>
+            <img src="C:\Users\user\Desktop\Sravanthi\calc.jpg"/>
+            <img src="C:\Users\user\Desktop\Sravanthi\calci.jpg"/>
+            </div>
+
+            <table style="width: 100%;">
+                <tr>
+                    <th>add</th>
+                    <th>sub</th>
+                    <th>mul</th>
+                    <th>div</th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>1st no</label>
+                        <input type="number" id="1st no">
+                        <br>
+                        <br>
+                        <label>2nd no</label>
+                        <input type="number" id="2nd no">
+                        <button onclick="add()">clickme</button>
+                    </th>
+    
+                    <th>
+                        <label>1st no</label>
+                        <input type="number" id="1st no"><br><br>
+                        <label>2nd no</label>
+                        <input type="number" id="2nd no">
+                        <button onclick="sub()">clickme</button>
+                    </th>
+                
+                    <th>
+                        <label>1st no</label>
+                        <input type="number" id="1st no"><br><br>
+                        <label>2nd no</label>
+                        <input type="number" id="2nd no">
+                        <button onclick="mul()">clickme</button>
+                    </th>
+                
+                    <th>
+                        <label>1st no</label>
+                        <input type="number" id="1st no"><br><br>
+                        <label>2nd no</label>
+                        <input type="number" id="2nd no">
+                        <button onclick="div()">clickme</button>
+                    </th>
+                    
+                </tr>
+            </table>  
+ </body>
+    
+</html>
