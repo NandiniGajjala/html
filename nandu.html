@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#flip").click(function() {
+            $("details").slideDown(5000);
+        });
+        $("#stop").click(function() {
+            $("details").stop();
+        });
+    });
+</script>
+<style>
+    #details, #flip {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #555;
+        color: white;
+        border: solid 1px #666;
+        border-radius: 3px;
+    }
+    #details {
+        padding: 50px;
+        display: none;
+    }
+</style>
+        <body>
+            <button id="stop">stop sliding</button>
+            <div id="flip">click to show my details</div>
+            <div id="details">
+                This is Nandini.
+                i am learning java class in ISM university.
+                <img src="C:\Users\Lenovo\Desktop\html\3.jpg"/>
+                I had completed my btech and i am searching for the job.
+                Artificial intelligence, Robotic process automation, Quatum computing, Edge computing, Internet of things.
+            </div>
+        </body>
+    </head>
+</html>

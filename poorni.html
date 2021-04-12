@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            table,th,td {
-                border: 1px solid rgb(8, 8, 8);
-                border-collapse: collapse;
-            }
-            th,td {
-                padding: 5px;
-                text-align: left;
-            }
-        </style>
-         </head>
-        <body>
-            <h2>Cell that spans two columns</h2>
-            <p>To make a cell span more than one column,use the colspan attribute.</p>
-            <table style="width: 100%;">
-            <tr>
-                <th>videos</th>
-                <th colspan="2">images</th>
-            </tr>
-            <tr>
-               <td> <iframe width="560" height="315" src="https://www.youtube.com/embed/CRjVN_FtOpk?start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </td>
-               <td> <img height="320" src="micky.jfif"/>
-            </td>
-            
-            </tr>
-            </table>
-        </body>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<button id="stop">Stop sliding</button>
+
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!
+    <div>This is Nandini</div>
+    <div> am learning java class in ISM university.</div>
+              <div>  <img width="320" src="C:\Users\Lenovo\Desktop\html\3.jpg"/></div>
    
+    <div> I had completed my btech and i am searching for the job.</div>
+    <div> Artificial intelligence, Robotic process automation, Quatum computing, Edge computing, Internet of things.</div>
+            
+</div>
+
+</body>
 </html>
